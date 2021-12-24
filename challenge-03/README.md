@@ -207,7 +207,5 @@ pessoa.apresentacao = function() {
 
 // Agora, apresente-se ;)
 
-pessoa.apresentacao()
-
-'Olá, eu sou o Lucas Santana, tenho 23 anos, 1.75, meu peso é 64 e, só hoje, eu já caminhei 210 metros!'
+pessoa.apresentacao() //'Olá, eu sou o Lucas Santana, tenho 23 anos, 1.75, meu peso é 64 e, só hoje, eu já caminhei 210 metros!'
 ```
