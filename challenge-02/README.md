@@ -70,13 +70,13 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function criaFunc( n1, n2 , n3 ) {
-    if ( n1 != null && n2 == null && n3 == null) {
+    if ( n1 != undefined && n2 == undefined && n3 == undefined) {
         return n1;
-    } else if(n2 != null && n3 == null) {
+    } else if(n2 != undefined && n3 == undefined) {
         return n1 + n2;
-    } else if(n3 != null) {
+    } else if(n3 != undefined) {
         return (n1+n2)/n3;
-    } else if(n1 == null && n2 == null && n3 == null) {
+    } else if(n1 == undefined && n2 == undefined && n3 == undefined) {
         return false;
     } else {
         return null;
