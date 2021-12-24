@@ -41,7 +41,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function rec3( n1, n2, n3 ) {
-    if( n1 == undefined || n2 == undefined || n3 == undefined ) {
+    if( n1 === undefined || n2 === undefined || n3 === undefined ) {
         return 'Preencha todos os valores corretamente !';
     } else {
         return (n1*n2*n3)+2
@@ -70,13 +70,13 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function criaFunc( n1, n2 , n3 ) {
-    if ( n1 != undefined && n2 == undefined && n3 == undefined) {
+    if ( n1 !== undefined && n2 === undefined && n3 === undefined) {
         return n1;
-    } else if(n2 != undefined && n3 == undefined) {
+    } else if(n2 !== undefined && n3 === undefined) {
         return n1 + n2;
-    } else if(n3 != undefined) {
+    } else if(n3 !== undefined) {
         return (n1+n2)/n3;
-    } else if(n1 == undefined && n2 == undefined && n3 == undefined) {
+    } else if(n1 === undefined && n2 === undefined && n3 === undefined) {
         return false;
     } else {
         return null;
