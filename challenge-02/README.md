@@ -72,9 +72,9 @@ Crie uma função com as seguintes características:
 function criaFunc( n1, n2 , n3 ) {
     if ( n1 !== undefined && n2 === undefined && n3 === undefined) {
         return n1;
-    } else if(n2 !== undefined && n3 === undefined) {
+    } else if(n1 !== undefined && n2 !== undefined && n3 === undefined) {
         return n1 + n2;
-    } else if(n3 !== undefined) {
+    } else if(n1 !== undefined && n2 !== undefined && n3 !== undefined) {
         return (n1+n2)/n3;
     } else if(n1 === undefined && n2 === undefined && n3 === undefined) {
         return false;
