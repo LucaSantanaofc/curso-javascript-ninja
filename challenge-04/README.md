@@ -130,11 +130,11 @@ citado acima, no lugar de "pessoas".
 */
 carro.getNewPeople = function( num ) {
     var people = 'pessoas';
-    if( carro.quantidadePessoas === 5 && num > 0) {
+    if( carro.quantidadePessoas === carro.assentos && num > 0) {
         return 'O carro já está lotado! ';
-    } else if( carro.quantidadePessoas + num > 5 ) {
+    } else if( carro.quantidadePessoas + num > carro.assentos ) {
         (5 - carro.quantidadePessoas) === 1 ? people = 'pessoa' : people;
-        return 'Só cabem mais ' + (5 - carro.quantidadePessoas )+ ' ' + people + ' !';
+        return 'Só cabem mais ' + (carro.assentos - carro.quantidadePessoas )+ ' ' + people + ' !';
     } else (5 - carro.quantidadePessoas) === 1 ? people = 'pessoa' : people;
         carro.quantidadePessoas + num === 1 ? people = 'pessoa' : people;
         carro.quantidadePessoas += num;
