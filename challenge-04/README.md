@@ -135,7 +135,10 @@ carro.getNewPeople = function( num ) {
     } else if( carro.quantidadePessoas + num > 5 ) {
         (5 - carro.quantidadePessoas) === 1 ? people = 'pessoa' : people;
         return 'Só cabem mais ' + (5 - carro.quantidadePessoas )+ ' ' + people + ' !';
-    } else carro.quantidadePessoas += num;
+    } else (5 - carro.quantidadePessoas) === 1 ? people = 'pessoa' : people;
+        carro.quantidadePessoas + num === 1 ? people = 'pessoa' : people;
+        carro.quantidadePessoas += num;
+        return 'Já temos ' + carro.quantidadePessoas + ' ' +people+ ' no carro';
 };
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
