@@ -33,25 +33,7 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 function showTeamPosition(x) {
-    switch(x) {
-        case 1:
-            return teams[0];
-            break;
-        case 2:
-            return teams[1];
-            break;
-        case 3:
-            return teams[2];
-            break;
-        case 4: 
-            return teams[3];
-            break;
-        case 5:
-            return teams[4];
-            break;
-        default:
-            return 'Não temos a informação do time que está nessa posição.';
-    };
+    return 'O time que está em ' + x + 'º lugar é o ' +teams[x-1]+ '.';
 }
 
 /*
