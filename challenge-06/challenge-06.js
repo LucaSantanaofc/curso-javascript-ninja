@@ -74,7 +74,7 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-function convertToHex(collor) {
+function convertToHex(color) {
     switch(collor) {
         case 'Red':
             return 'O hexadecimal para a cor ' + collor + ' é #FF0000.';
