@@ -33,20 +33,24 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 function showTeamPosition(x) {
-    return 'O time que está em ' + x + 'º lugar é o ' +teams[x-1]+ '.';
+    if(x < 1 || x>5) {
+        return 'Não temos informação do time que está nesta posição';
+    } else {
+        return 'O time que está em ' +x+ 'º lugar é o ' +teams[x-1]+ '.';
+    }
 }
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-showTeamPosition(1)
+console.log(showTeamPosition(1));
 //'Goiás'
-showTeamPosition(2)
+console.log(showTeamPosition(2));
 //'Anápolis'
-showTeamPosition(3)
+console.log(showTeamPosition(3));
 //'Goiânia FC'
-showTeamPosition(4)
+console.log(showTeamPosition(1));
 //'Atlético GO FC'
 
 /*
